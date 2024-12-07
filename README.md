@@ -23,14 +23,15 @@ Este proyecto es un sistema de gestión de citas médicas para un consultorio. P
    
 2. Ingresa al directorio del proyecto:
 
-bash
+   ```bash
 Copiar código
 cd consultorio-medico
+
 3. Importa el proyecto en tu IDE preferido (Eclipse, IntelliJ, etc.).
 
 4. Asegúrate de tener una base de datos MySQL configurada. Crea una base de datos llamada consultorio_db o edita las configuraciones de conexión en el archivo application.properties o application.yml.
 
-properties
+   ```properties
 Copiar código
 spring.datasource.url=jdbc:mysql://localhost:3306/consultorio_db
 spring.datasource.username=usuario
