@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Lista de Doctores</title>
+</head>
+<body>
+<header>
+    <h1>Lista de Doctores</h1>
+    <nav>
+        <a href="/">Volver a Inicio</a>
+    </nav>
+</header>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido Paterno</th>
+        <th>Apellido Materno</th>
+        <th>Especialidad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="doctor : ${doctores}">
+        <td th:text="${doctor.nombre}"></td>
+        <td th:text="${doctor.apellidoPaterno}"></td>
+        <td th:text="${doctor.apellidoMaterno}"></td>
+        <td th:text="${doctor.especialidad}"></td>
+    </tr>
+    </tbody>
+</table>
+<a href="/doctores/agregar">Agregar Nuevo Doctor</a>
+</body>
