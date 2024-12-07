@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Ver Citas</title>
+</head>
+<body>
+<header>
+    <h1>Lista de Citas</h1>
+    <nav>
+        <a href="/">Volver a Inicio</a>
+    </nav>
+</header>
+<main>
+    <h2>Citas Programadas</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Consultorio</th>
+            <th>Fecha y Hora</th>
+            <th>Paciente</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="cita : ${citas}">
+            <td th:text="${cita.doctor.nombre}"></td>
+            <td th:text="${cita.consultorio.numero}"></td>
+            <td th:text="${cita.horarioConsulta}"></td>
+            <td th:text="${cita.nombrePaciente}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Agregar Doctor</title>
+</head>
+<body>
+<h1>Agregar Nuevo Doctor</h1>
+<form action="/doctores/guardar" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label for="apellidoPaterno">Apellido Paterno:</label>
+    <input type="text" id="apellidoPaterno" name="apellidoPaterno" ><br>
+
+    <label for="apellidoMaterno">Apellido Materno:</label>
+    <input type="text" id="apellidoMaterno" name="apellidoMaterno"><br>
+
+    <label for="especialidad">Especialidad:</label>
+    <input type="text" id="especialidad" name="especialidad"><br>
+
+    <button type="submit">Guardar Doctor</button>
+</form>
+<a href="/">Inicio</a>
+</body>
+</html>

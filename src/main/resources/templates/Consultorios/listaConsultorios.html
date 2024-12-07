@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Lista Consultorios</title>
+</head>
+<body>
+<header>
+    <h1>Lista de Citas</h1>
+    <nav>
+        <a href="/">Volver a Inicio</a>
+    </nav>
+</header>
+<table>
+    <thead>
+    <tr>
+        <th>Numero</th>
+        <th>Piso</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="consultorio : ${consultorios}">
+        <td th:text="${consultorio.numero}"></td>
+        <td th:text="${consultorio.piso}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Enlace para agregar un nuevo consultorio -->
+<a href="/consultorios/agregar">Agregar Nuevo Consultorio</a>
+</body>
+</html>
