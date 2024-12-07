@@ -24,20 +24,21 @@ Este proyecto es un sistema de gestión de citas médicas para un consultorio. P
 2. Ingresa al directorio del proyecto:
 
    ```bash
-Copiar código
-cd consultorio-medico
+   Copiar código
+   cd consultorio-medico
 
 3. Importa el proyecto en tu IDE preferido (Eclipse, IntelliJ, etc.).
 
 4. Asegúrate de tener una base de datos MySQL configurada. Crea una base de datos llamada consultorio_db o edita las configuraciones de conexión en el archivo application.properties o application.yml.
 
    ```properties
-Copiar código
-spring.datasource.url=jdbc:mysql://localhost:3306/consultorio_db
-spring.datasource.username=usuario
-spring.datasource.password=contraseña
-spring.jpa.hibernate.ddl-auto=update
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   Copiar código
+   spring.datasource.url=jdbc:mysql://localhost:3306/consultorio_db
+   spring.datasource.username=usuario
+   spring.datasource.password=contraseña
+   spring.jpa.hibernate.ddl-auto=update
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
 5. Ejecuta el proyecto como una aplicación Spring Boot. El servidor arrancará en http://localhost:8080.
 
 ## Uso
